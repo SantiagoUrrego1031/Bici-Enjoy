@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "nombre": "Trek Marlin 7",
+    "precio": 1500000,
+    "descripcion": "Trek marlin 7, Cuadro en aluminio reforzado, rin 29",
+    "tipo": "MTB",
+    "imagen": "images/bici1.png",
+    "estado": "Disponible"
+  },
+  {
+    "id": 2,
+    "nombre": "MTB Aluminio 29”",
+    "precio": 2800000,
+    "descripcion": "Suspensión delantera, frenos hidráulicos",
+    "tipo": "MTB",
+    "imagen": "images/bici2.jpg",
+    "estado": "Disponible"
+  },
+  {
+    "id": 2,
+    "nombre": "MTB Aluminio 29”",
+    "precio": 2800000,
+    "descripcion": "Suspensión delantera, frenos hidráulicos",
+    "tipo": "MTB",
+    "imagen": "images/bici2.jpg",
+    "estado": "Disponible"
+  },
+    {
+    "id": 2,
+    "nombre": "MTB Aluminio 29”",
+    "precio": 2800000,
+    "descripcion": "Suspensión delantera, frenos hidráulicos",
+    "tipo": "MTB",
+    "imagen": "images/bici2.jpg",
+    "estado": "Disponible"
+  },
+    {
+    "id": 2,
+    "nombre": "MTB Aluminio 29”",
+    "precio": 2800000,
+    "descripcion": "Suspensión delantera, frenos hidráulicos",
+    "tipo": "MTB",
+    "imagen": "images/bici2.jpg",
+    "estado": "Disponible"
+  }
+]

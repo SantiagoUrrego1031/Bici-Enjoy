@@ -34,14 +34,5 @@
     "tipo": "MTB",
     "imagen": "images/bici2.jpg",
     "estado": "Disponible"
-  },
-    {
-    "id": 2,
-    "nombre": "MTB Aluminio 29”",
-    "precio": 2800000,
-    "descripcion": "Suspensión delantera, frenos hidráulicos",
-    "tipo": "MTB",
-    "imagen": "images/bici2.jpg",
-    "estado": "Disponible"
   }
 ]

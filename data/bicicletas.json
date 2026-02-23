@@ -1,38 +1,20 @@
 [
   {
     "id": 1,
-    "nombre": "Trek Marlin 7",
-    "precio": 1500000,
-    "descripcion": "Trek marlin 7, Cuadro en aluminio reforzado, rin 29",
+    "nombre": "Specialized RockHopper Rin 29”",
+    "precio": 1490000,
+    "descripcion": "SPECIALIZED ROCKHOPPER RIN 29 talla M en súper perfecto estado grupo Shimano acera 8x3 suspensión SUNTOR de rebote llantas y neumáticos nuevos frenos hidráulicos",
     "tipo": "MTB",
-    "imagen": "images/bici1.png",
+    "imagen": "images/specialized.jpg",
     "estado": "Disponible"
   },
   {
     "id": 2,
-    "nombre": "MTB Aluminio 29”",
-    "precio": 2800000,
-    "descripcion": "Suspensión delantera, frenos hidráulicos",
+    "nombre": "Optimus Tucana Rin 29”",
+    "precio": 770000,
+    "descripcion": "Optimus Tucana, rin 29 talla L. Grupo￼ Shimano 7 × 3 frenos hidráulicos cartucho pachá y cadenilla nuevos.",
     "tipo": "MTB",
-    "imagen": "images/bici2.jpg",
-    "estado": "Disponible"
-  },
-  {
-    "id": 2,
-    "nombre": "MTB Aluminio 29”",
-    "precio": 2800000,
-    "descripcion": "Suspensión delantera, frenos hidráulicos",
-    "tipo": "MTB",
-    "imagen": "images/bici2.jpg",
-    "estado": "Disponible"
-  },
-    {
-    "id": 2,
-    "nombre": "MTB Aluminio 29”",
-    "precio": 2800000,
-    "descripcion": "Suspensión delantera, frenos hidráulicos",
-    "tipo": "MTB",
-    "imagen": "images/bici2.jpg",
+    "imagen": "images/Optimus.jpg",
     "estado": "Disponible"
   }
 ]

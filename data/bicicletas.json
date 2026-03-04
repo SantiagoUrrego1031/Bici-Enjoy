@@ -16,8 +16,7 @@
     "tipo": "MTB",
     "imagen": "images/Optimus.jpg",
     "estado": "Disponible"
-  }
-],
+  },
   {
     "id": 3,
     "nombre": "Specialized Rochopper Rin 29”",
@@ -26,10 +25,9 @@
     "tipo": "MTB",
     "imagen": "images/specializedGrisAzul.jpg",
     "estado": "Disponible"
-  }
-],
+  },
   {
-    "id": 2,
+    "id": 4,
     "nombre": "Specialized Rochopper rin 27.5",
     "precio": 1100000,
     "descripcion": "Specialized rin 27.5 en perfecto estado ￼ruedas maxxis nuevas grupo Shimano 7 x 3 suspensión SUNTOR de rebote talla M",

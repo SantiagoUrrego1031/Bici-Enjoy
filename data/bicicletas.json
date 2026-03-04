@@ -26,8 +26,8 @@
     "tipo": "MTB",
     "imagen": "images/specializedGrisAzul.jpg",
     "estado": "Disponible"
-  },
-]
+  }
+],
   {
     "id": 2,
     "nombre": "Specialized Rochopper rin 27.5",

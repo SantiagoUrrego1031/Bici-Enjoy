@@ -1,4 +1,4 @@
-const WHATSAPP_NUMBER = "573001234567"; // cambia por tu número (57 + número)
+const WHATSAPP_NUMBER = "573203105001"; // cambia por tu número (57 + número)
 let bicicletas = [];
 
 fetch('data/bicicletas.json')
@@ -17,25 +17,34 @@ function mostrarBicis(lista) {
 
   lista.forEach(bici => {
     const mensaje = encodeURIComponent(
-      `Hola 👋, me interesa la bicicleta ${bici.nombre} (${bici.tipo}) por $${bici.precio.toLocaleString()}`
+      `Hola, me interesa la bicicleta ${bici.nombre} (${bici.tipo}) por $${bici.precio.toLocaleString()}`
     );
 
     const urlWhatsapp = `https://wa.me/${WHATSAPP_NUMBER}?text=${mensaje}`;
 
     contenedor.innerHTML += `
-      <div class="card">
-        <img src="${bici.imagen}" alt="${bici.nombre}">
-        <h3>${bici.nombre}</h3>
-        <p>${bici.descripcion}</p>
-        <p><strong>Tipo:</strong> ${bici.tipo}</p>
-        <p class="precio">$${bici.precio.toLocaleString()}</p>
-        <p><strong>Estado:</strong> ${bici.estado}</p>
+  <div class="card ${bici.estado === "Vendida" ? "vendida" : ""}">
+    
+    <div class="img-container">
+      <img src="${bici.imagen}" alt="${bici.nombre}">
+      ${bici.estado === "Vendida" ? '<span class="vendido-ribbon">VENDIDA</span>' : ''}
+    </div>
 
-        <a href="${urlWhatsapp}" target="_blank" class="btn-whatsapp">
-          💬 Consultar por WhatsApp
-        </a>
-      </div>
-    `;
+    <h3>${bici.nombre}</h3>
+    <p>${bici.descripcion}</p>
+
+    <p><strong>Tipo:</strong> ${bici.tipo}</p>
+
+    <p class="precio">$${bici.precio.toLocaleString()}</p>
+
+    <p class="estado ${bici.estado.toLowerCase()}">${bici.estado}</p>
+
+    <a href="${urlWhatsapp}" target="_blank" class="btn-whatsapp">
+      💬 Consultar por WhatsApp
+    </a>
+
+  </div>
+`;
   });
 }
 
@@ -63,5 +72,3 @@ document.getElementById('btn-filtrar').addEventListener('click', () => {
 
   mostrarBicis(resultado);
 });
-
-  mostrarBicis(resultado);

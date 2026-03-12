@@ -34,6 +34,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  animation: fadeUp 0.35s ease forwards;
 }
 
 .card:hover {
@@ -163,11 +164,6 @@ main {
   }
 }
 
-/* Estado animado */
-.card {
-  animation: fadeUp 0.35s ease forwards;
-}
-
 /* Micro-interacción en imagen */
 .card img {
   transition: transform 0.25s ease;
@@ -186,4 +182,52 @@ main {
 
 header {
   padding: 2.2rem 1rem;
+}
+
+/* Card de vendida estilo*/
+
+.estado {
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 6px;
+  display: inline-block;
+  font-size: 0.8rem;
+}
+
+.estado.disponible {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.estado.vendida {
+  background: #ffebee;
+  color: #c62828;
+}
+
+/*Container IMG*/
+
+.img-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/* Banda diagonal */
+.vendido-ribbon {
+  position: absolute;
+  top: 15px;
+  left: -50px;
+  width: 200px;
+  text-align: center;
+  background: #d32f2f;
+  color: white;
+  font-weight: bold;
+  padding: 6px 0;
+  transform: rotate(-35deg);
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.card.vendida img {
+  filter: grayscale(60%);
 }

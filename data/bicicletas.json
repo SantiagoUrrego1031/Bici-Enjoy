@@ -1,4 +1,13 @@
 [
+    {
+    "id": 3,
+    "nombre": "Specialized Rochopper Rin 29”",
+    "precio": 1600000,
+    "descripcion": "Specialized Rin 29 en perfecto estado grupo Shimano Acera 8x3 centro hueco frenos hidráulicos suspensión SUNTOR",
+    "tipo": "MTB",
+    "imagen": "images/specializedgrisazul.jpeg",
+    "estado": "Disponible"
+  },
   {
     "id": 1,
     "nombre": "Specialized RockHopper Rin 29”",
@@ -18,21 +27,12 @@
     "estado": "Vendida"
   },
   {
-    "id": 3,
-    "nombre": "Specialized Rochopper Rin 29”",
-    "precio": 1600000,
-    "descripcion": "Specialized Rin 29 en perfecto estado grupo Shimano Acera 8x3 centro hueco frenos hidráulicos suspensión SUNTOR",
-    "tipo": "MTB",
-    "imagen": "images/specializedgrisazul.jpeg",
-    "estado": "Disponible"
-  },
-  {
     "id": 4,
     "nombre": "Specialized Rochopper rin 27.5",
     "precio": 1100000,
     "descripcion": "Specialized rin 27.5 en perfecto estado ￼ruedas maxxis nuevas grupo Shimano 7 x 3 suspensión SUNTOR de rebote talla M",
     "tipo": "MTB",
     "imagen": "images/especializedrosa.jpeg",
-    "estado": "Disponible"
+    "estado": "Vendida"
   }
 ]

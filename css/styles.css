@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 body {
@@ -27,19 +27,20 @@ main {
 
 .card {
   background: #fff;
-  border-radius: 12px;
-  padding: 1rem;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  transition: all 0.4s cubic-bezier(.2,.8,.2,1);
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  animation: fadeUp 0.35s ease forwards;
+  opacity: 0;
+  transform: translateY(40px);
 }
 
+/* Hover elegante */
 .card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 16px 30px rgba(0,0,0,0.12);
+  transform: translateY(-8px);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.12);
 }
 
 .card img {
@@ -66,24 +67,27 @@ main {
   margin: 0 auto;
 }
 
+/* Título */
 .card h3 {
-  font-size: 1.1rem;
-  margin: 0.3rem 0;
+  font-size: 1.15rem;
+  font-weight: 600;
   color: #111;
 }
 
+/* Descripción más sutil */
 .card p {
   font-size: 0.9rem;
-  color: #555;
-  margin: 0.1rem 0;
+  color: #666;
 }
 
+/* Precio premium */
 .precio {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #2e7d32;
-  margin-top: 0.3rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #111;
+  margin-top: 0.4rem;
 }
+
 .filtros {
   display: flex;
   gap: 0.5rem;
@@ -121,12 +125,20 @@ main {
   transition: opacity 0.2s ease;
 }
 
-.btn-whatsapp:hover {
-  opacity: 0.9;
-}
-
+/* Botón elegante */
 .btn-whatsapp {
-  box-shadow: 0 6px 14px rgba(37, 211, 102, 0.25);
+  margin-top: 0.8rem;
+  padding: 0.7rem;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.btn-whatsapp:hover {
+  background: #333;
 }
 
 .btn-whatsapp:active {
@@ -170,7 +182,7 @@ main {
 }
 
 .card:hover img {
-  transform: scale(1.03);
+  transform: scale(1.05);
 }
 /* Aplica animación solo cuando corresponde */
 .animar .card {
@@ -208,8 +220,15 @@ header {
 
 .img-container {
   position: relative;
+  width: 100%;
+  height: 260px;
   overflow: hidden;
-  border-radius: 10px;
+}
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
 }
 
 /* Banda diagonal */
@@ -231,3 +250,160 @@ header {
 .card.vendida img {
   filter: grayscale(60%);
 }
+
+/*NUEVA ADAPTACION*/
+.hero {
+  background: linear-gradient(135deg, #000, #1c1c1c);
+  color: white;
+  padding: 5rem 1rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 0;
+  letter-spacing: -1px;
+}
+
+.hero p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #bbb;
+}
+
+/* Animación visible */
+.card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.filtros {
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.6);
+  padding: 1rem;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:1rem 2rem;
+  background:#fff;
+  box-shadow:0 4px 10px rgba(0,0,0,0.05);
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+
+.logo{
+  font-weight:bold;
+  font-size:1.2rem;
+}
+
+.menu{
+  list-style:none;
+  display:flex;
+  gap:1.5rem;
+}
+
+.menu a{
+  text-decoration:none;
+  color:#111;
+  font-weight:500;
+}
+
+/* Contenido */
+.card-content {
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+/*IMAGEN DESTACADA*/
+
+.destacada {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+}
+
+/* Imagen */
+.destacada-img img {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+}
+
+/* Texto */
+.destacada-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.tag {
+  font-size: 0.8rem;
+  background: #111;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 20px;
+  width: fit-content;
+}
+
+.destacada-info h2 {
+  font-size: 2rem;
+  margin: 0;
+  color: #111;
+}
+
+.destacada-info p {
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Botón elegante */
+.btn-destacada {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.8rem 1.2rem;
+  background: #111;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-destacada:hover {
+  background: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .destacada {
+    grid-template-columns: 1fr;
+  }
+}
+/* Animación base */
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s cubic-bezier(.2,.8,.2,1);
+}
+
+/* Cuando aparece */
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Delay elegante */
+.delay-1 { transition-delay: 0.2s; }
+.delay-2 { transition-delay: 0.4s; }
+.delay-3 { transition-delay: 0.6s; }

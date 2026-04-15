@@ -1,5 +1,14 @@
 [
     {
+    "id": 5,
+    "nombre": "Trek Marlin 5 Rin 29”",
+    "precio": 1300000,
+    "descripcion": "Trek Marlin 5 Rin 29 en perfecto estado grupo Shimano 7x3 frenos hidráulicos suspensión SUNTOR",
+    "tipo": "MTB",
+    "imagen": "images/TrekMArlin5Negra.jpeg",
+    "estado": "Disponible"
+  },
+    {
     "id": 3,
     "nombre": "Specialized Rochopper Rin 29”",
     "precio": 1600000,
